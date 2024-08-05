@@ -15,6 +15,8 @@
 
 
 // console.log("5"===5)
+
+
 // console.log("hi")
 
 // let first_name ="Aung"
@@ -102,6 +104,7 @@
 // console.log("Hi");
 // console.log("Hi");
 // console.log("Hi");console.log("Hi");
+
 // function name(){
 
     
@@ -132,12 +135,14 @@
 // }
 
 // console.log(name("God")
+
 // let name =(name,age)=>{             
 //     // console.log(name,age)
-//     return {name : name,age :age} ;
+//     return {name : name,age :age} ; // return the name and age as object
 // }
 
 // console.log(name("God",23))
+
 
 
 // in the function only have return  operation
@@ -209,6 +214,8 @@
     
 //     return this.name + " " +this.age;
 // }
+
+// console.log(name("God",23))
 // function constructor
 // function bio(name,age){
 //           this.name  = name;
