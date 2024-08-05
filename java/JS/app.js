@@ -1,3 +1,20 @@
+// alert('hi there');
+
+// console.log('hi there')
+
+// var name ="Aung"
+// name =123
+// console.log(name);
+
+// let u = "Aung123"
+// console.log(u)
+
+// const PI =3.14
+
+// console.log(PI)
+
+
+// console.log("5"===5)
 // console.log("hi")
 
 // let first_name ="Aung"
@@ -109,6 +126,12 @@
 // }
 // yourname("DOG")
 // name()
+// let name =name=>{             
+//     // console.log(name)
+
+// }
+
+// console.log(name("God")
 // let name =(name,age)=>{             
 //     // console.log(name,age)
 //     return {name : name,age :age} ;
@@ -179,7 +202,13 @@
 
 // }
 // console.log(bio)
-
+// let name =(name,age)=>{             
+//     // console.log(name,age)
+//     this.name = name;
+//     this.age = age;
+    
+//     return this.name + " " +this.age;
+// }
 // function constructor
 // function bio(name,age){
 //           this.name  = name;
