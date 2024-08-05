@@ -121,3 +121,70 @@
 // var getname = yourname=>yourname;
 
 // console.log(getname("Aung Kyaw"))
+
+
+
+// Array
+
+// let name = [
+    
+//     "Aung",
+//     "Kyaw2",
+//     "God"
+
+// ]
+
+// console.log(name[0])
+// for each
+// name.forEach((element) => {
+//     console.log(element)
+// });
+
+//for filter
+
+// let name1 = name.filter((names) =>{
+
+//     return names=="Kyaw2"
+
+// })
+
+// console.log(name1)
+
+
+// for map
+
+// let newnamearray = name.map((element)=>{
+        
+//     return ("Mr" + element)
+// })
+// console.log(newnamearray)
+// console.log(name)
+
+//object
+
+// let bio = ["Aung",23,false,2000, "brown"]
+// let bio = {
+//        Name : "Aung",
+//        age :23,
+//        isMarried : false,
+//        color :"brown",
+//       birthday:2024- parseInt("23"),
+//        bornyear(){
+//             //  return 2024-23;
+//             // console.log(this)
+//             return 2024-this.age;
+           
+//        }
+
+
+// }
+// console.log(bio)
+
+// function constructor
+// function bio(name,age){
+//           this.name  = name;
+//           this. age = age;
+// }
+
+// let biography = new bio("Aung",23);
+// console.log(biography)
