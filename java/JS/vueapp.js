@@ -4,7 +4,8 @@ const app =Vue.createApp({
         return{
             title : "Aung God",
             author : "God Of data",
-            age :20
+            age :20,
+            showbook : true,
         }
     },
     methods:{
