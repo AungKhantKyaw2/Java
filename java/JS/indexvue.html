@@ -22,6 +22,24 @@
          <button v-on:click = "author='aung aung'">Change authorname</button>
          <!-- <button v-on:click = "age++">IncreaseAge</button> -->
     </div>
+
+<!--      if conditon --> 
+     <div id="app">
+        <div v-if="showbook===false">
+         <p>Booktitle is {{title}}</p>
+         <p>Author is {{author}}</p>
+         <p>My age is {{age}}</p>
+        </div> -->
+        <button v-on:click = "showbook=false">Hidebook</button>
+         <button v-on:click = "showbook=true">showbook </button>staic
+
+       <button @click ="showbook=!showbook">
+         <span v-if="showbook">hide</span>
+         <span v-if="showbook===false">show</span>
+        </button>
+        
+          
+   </div>
     <script src="JS/vueapp.js"></script>
 </body>
 </html>
