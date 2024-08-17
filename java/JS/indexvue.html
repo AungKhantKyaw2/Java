@@ -6,39 +6,67 @@
 
     <title>VUe</title>
     <script src="https://unpkg.com/vue@3.4.37/dist/vue.global.js"></script>
+    <style>
+        .box{
+             background-color: aqua ;
+             padding :100px;
+             display:  inline-block;
+             margin: 30px;
+
+        }
+        li{
+            list-style: none;
+            
+        }
+    .favourite{
+        background-color:blue;
+    }
+    </style>
 </head>
 <body>
     <h1>Vue</h1>
     
-    <div id="app">
+    <!-- <div id="app"> -->
         <!-- <h1>Hi there</h1> -->
          <!-- <h1>Booktitle is {{title}}</h1>
          <h2>Author is {{author}}</h2>
          <h4>My age is {{age}}</h4> -->
-         <p>Booktitle is {{title}}</p>
+         <!-- <p>Booktitle is {{title}}</p>
          <p>Author is {{author}}</p>
          <p>My age is {{age}}</p>
-         <button v-on:click = "IncreaseAge">IncreaseAge</button>
-         <button v-on:click = "author='aung aung'">Change authorname</button>
+         <button v-on:click = "IncreaseAge">IncreaseAge</button> -->
+         <!-- <button v-on:click = "author='aung aung'">Change authorname</button> -->
          <!-- <button v-on:click = "age++">IncreaseAge</button> -->
-    </div>
-
-<!--      if conditon --> 
-     <div id="app">
+    <!-- </div> -->
+    <div id="app">
         <div v-if="showbook===false">
-         <p>Booktitle is {{title}}</p>
-         <p>Author is {{author}}</p>
-         <p>My age is {{age}}</p>
-        </div> -->
-        <button v-on:click = "showbook=false">Hidebook</button>
-         <button v-on:click = "showbook=true">showbook </button>staic
-
+        <ul v-for = "book in filterbook">
+           
+         <!-- <p>Booktitle is {{books[0].title}}</p>
+         <p>Author is {{books[0].author}}</p>
+         <p>My age is {{books[0].age}}</p> -->
+         <!-- <li v-bind:class="{favourite:book.isFav===true}" v-on:dblclick="book.isFav=!book.isFav"> -->
+        <li v-bind:class="{favourite:book.isFav}" v-on:dblclick="clickcolorshow(book)">
+         <img v-bind:src = "book.img" width=300, height=300>
+         <p>Booktitle is {{book.title}}</p>
+         <p>Author is {{book.author}}</p>
+         <p>My age is {{book.age}}</p>
+         <button v-on:click = "book.age++">IncreaseAge</button>
+        </li>
+        </ul>
+        </div> 
+       
        <button @click ="showbook=!showbook">
-         <span v-if="showbook">hide</span>
-         <span v-if="showbook===false">show</span>
+         <span v-if="showbook">show</span>
+         <span v-if="showbook===false">hide</span>
         </button>
-        
-          
+        <br>    
+        <a v-bind:href="link">plexity ai</a>
+        <a :href="link">plexity ai</a>
+        <br>
+        <div class="box" v-on:mouseover="mousemovehandler($event,23)">Mouse Over</div>    
+        <div class="box" v-on:mouseleave="mouseleave($event,'god')">Mouse Leave</div>
+        <div class="box" @dblclick="dbclick($event,'Aung')">Double Click</div>  
    </div>
     <script src="JS/vueapp.js"></script>
 </body>
